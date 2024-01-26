@@ -1,0 +1,19 @@
+weight = 4.8
+#Ground Shipping
+flat_charge = 20
+if weight <= 2: price_per_pound = 1.50
+elif weight > 2 and weight <= 6: price_per_pound = 3.00
+elif weight > 6 and weight <= 10: price_per_pound = 4.00
+else: price_per_pound = 4.75
+cost = weight * price_per_pound + flat_charge
+print ("Ground Shipping:", cost)
+premium_ground_shipping = 125.00
+print ("Premium Ground Shipping",premium_ground_shipping)
+# "Drone Shipping"
+flat_charge_drone = 0.00
+if weight <= 2: price_per_pound_drone = 4.50
+elif weight > 2 and weight <= 6: price_per_pound_drone = 9.00
+elif weight > 6 and weight <= 10: price_per_pound_drone = 12
+else: price_per_pound_drone = 14.25
+cost_drone = weight * price_per_pound_drone + flat_charge_drone
+print("Drone Shipping:", cost_drone)
